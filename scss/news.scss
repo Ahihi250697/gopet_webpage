@@ -71,4 +71,28 @@
     .news__content {
         margin-top: 10px;
     }
+
+    @include near_ipadpro {
+        padding: 0 20px;
+
+        .news__heading {
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .news__box {
+            width: 100%;
+            max-width: 100%;
+            padding: 10px 15px 25px 15px;
+            margin-bottom: 20px;
+        }
+
+        .news__title {
+            font-size: 22px;
+        }
+
+        .news__content {
+            margin-top: 20px;
+        }
+    }
 }

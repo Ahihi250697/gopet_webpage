@@ -41,12 +41,13 @@
 
 .download-now {
     width: 100%;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
     border-radius: 4px;
-    // background-color: #fff;
     border: 2px solid $color_main;
     color: #fff;
     margin-top: 80px;
@@ -60,14 +61,14 @@
     &::after,
     &::before {
         content: '';
-        width: 60%;
+        width: 80%;
         height: 100%;
         background-color: $color_main;
         position: absolute;
         top: 0;
         z-index: -1;
         transform: translateX(0%) skew(-45deg);
-        transition: all .3s ease;
+        transition: all .3s linear;
     }
 
     &::after {
@@ -82,11 +83,11 @@
 
     &:hover {
         &::after {
-            transform: translateX(-50%) skew(-45deg);
+            transform: translateX(-65%) skew(-45deg);
         }
 
         &::before {
-            transform: translateX(50%) skew(-45deg);
+            transform: translateX(65%) skew(-45deg);
         }
     }
 }
