@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import './functions.scss';
+@import './_var.scss';
+
+.feature-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 40px;
+
+    .feature__container {}
+
+    .feature__content {
+        display: flex;
+        align-items: center;
+
+        .left-block {
+            width: 100%;
+            max-width: 40%;
+            padding: 20px;
+        }
+
+        .right-block {}
+
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+
+    }
+
+}

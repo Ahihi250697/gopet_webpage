@@ -1,0 +1,21 @@
+.feature-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.feature-area .feature__content {
+  display: flex;
+  align-items: center;
+}
+.feature-area .feature__content .left-block {
+  width: 100%;
+  max-width: 40%;
+  padding: 20px;
+}
+.feature-area .feature__content.reverse {
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=feature.css.map */

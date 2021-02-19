@@ -23,7 +23,7 @@
   transform: translateY(-50%);
 }
 .etc .etc-etc::after {
-  left: -45px;
+  left: -35px;
 }
 .etc .etc-etc::before {
   right: -35px;

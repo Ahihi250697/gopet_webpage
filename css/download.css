@@ -1,0 +1,60 @@
+.download-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.download-area .downloads {
+  width: 100%;
+  max-width: calc((100% / 3) - 15px);
+}
+.download-area .downloads.window .download__title {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.download-area .downloads.android .download__title {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.download-area .downloads.ios .download__title {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+.download-area .download__title {
+  font-size: 32px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+.download-area .download__link {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.download-area .download__link:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+@media screen and (max-width: 1023px) {
+  .download-area {
+    padding: 0px 20px;
+    display: block;
+  }
+  .download-area .downloads {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=download.css.map */

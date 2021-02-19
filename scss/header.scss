@@ -5,6 +5,7 @@
 .app {
     max-width: $screen_1366;
     margin: 0 auto;
+    padding: 0 20px;
 
     .header-area {
         position: fixed;
@@ -13,6 +14,10 @@
         left: 0;
         width: 100%;
         background-color: rgba(#000, .8);
+    }
+
+    @include ipadpro {
+        padding: 0;
     }
 
 }
@@ -24,7 +29,7 @@
     height: 100px;
     max-width: $screen_1366;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 
     .nav-brand {
         min-width: 180px;
@@ -113,6 +118,7 @@
 
     @include near_ipadpro {
         height: 80px;
+        padding: 0 20px;
 
         .nav-brand {
             min-width: 100px;
