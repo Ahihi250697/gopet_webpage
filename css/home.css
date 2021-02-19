@@ -1,0 +1,86 @@
+.landing .landing__direct .btn-direct {
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.landing .landing__direct .btn-direct:hover {
+  color: deeppink;
+}
+
+.landing {
+  position: relative;
+}
+.landing .landing__img {
+  width: 100%;
+  position: relative;
+}
+.landing .landing__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.landing .landing__content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.landing .landing__heading {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+}
+.landing .landing__direct {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.landing .landing__direct .btn-direct {
+  color: deeppink;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 25px;
+  border-radius: 4px;
+}
+.landing .landing__direct .btn-direct:not(:first-child) {
+  margin-left: 15px;
+}
+.landing .landing__direct .btn-direct::after, .landing .landing__direct .btn-direct::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.landing .landing__direct .btn-direct::after {
+  transform: translateX(0);
+  background-color: #fff;
+}
+.landing .landing__direct .btn-direct::before {
+  transform: translateX(100%);
+  background-color: deeppink;
+}
+.landing .landing__direct .btn-direct:hover {
+  color: #fff;
+}
+.landing .landing__direct .btn-direct:hover::after {
+  transform: translateX(-110%);
+}
+.landing .landing__direct .btn-direct:hover::before {
+  transform: translateX(0%);
+}
+
+/*# sourceMappingURL=home.css.map */

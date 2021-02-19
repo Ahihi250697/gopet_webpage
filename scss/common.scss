@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import './_var.scss';
+@import './functions.scss';
+// $font_dancing: 'Dancing Script',
+// cursive;
+// $font_noto: 'Noto Sans',
+// sans-serif;
+// $font_truclenta: 'Truculenta',
+// sans-serif;
+
+body {
+    font-family: $font_truclenta;
+    font-size: 18px;
+    background-color: #23272a;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+body>main {
+    -ms-overflow-x: hidden;
+}
+
+@supports (-ms-ime-align: auto) {
+    body>main {
+        overflow: hidden;
+    }
+}
+
+@supports (-ms-ime-align: auto) {
+    body>main {
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,59 @@
+.news .news__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news .news__heading {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.news .news__box {
+  width: 100%;
+  max-width: calc(50% - 5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.news .news__box::after, .news .news__box::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.news .news__box::after {
+  top: 0;
+  right: 0;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.news .news__box::before {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.news .news-text {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.news .news__title {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+.news .news__date,
+.news .news__author {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.news .news__content {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=news.css.map */

@@ -1,0 +1,96 @@
+.user-area .login,
+.user-area .register, .nav .nav-menu .nav-menu__item {
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.user-area .login:hover,
+.user-area .register:hover, .nav .nav-menu .nav-menu__item:hover {
+  color: deeppink;
+}
+
+.app {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.app .header-area {
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav .nav-brand {
+  min-width: 180px;
+  font-size: 14px;
+  font-family: "Truculenta", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+  line-height: 1.15;
+}
+.nav .nav-brand .brand {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  transition: all 0.3s ease;
+}
+.nav .nav-brand:hover .brand {
+  color: deeppink;
+}
+.nav .nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav .nav-menu {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-menu .nav-menu__item {
+  letter-spacing: 1px;
+  display: block;
+  position: relative;
+}
+.nav .nav-menu .nav-menu__item::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background-color: deeppink;
+  transform: scale(0, 1);
+  transition: all 0.3s ease;
+}
+.nav .nav-menu .nav-menu__item:hover::after {
+  transform: scale(1, 1);
+}
+.nav .user-area {
+  margin-left: auto;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+}
+.user-area .login,
+.user-area .register {
+  display: block;
+}
+
+/*# sourceMappingURL=header.css.map */

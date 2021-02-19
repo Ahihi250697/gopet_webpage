@@ -1,0 +1,20 @@
+$font_dancing: 'Dancing Script',
+cursive;
+$font_noto: 'Noto Sans',
+sans-serif;
+$font_truclenta: 'Truculenta',
+sans-serif;
+
+$screen_1366: 1366px;
+$color_main: deeppink;
+
+%common_text {
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $color_main;
+    }
+}

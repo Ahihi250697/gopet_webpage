@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import './functions.scss';
+@import './_var.scss';
+
+.app {
+    max-width: $screen_1366;
+    margin: 0 auto;
+
+    .header-area {
+        position: fixed;
+        z-index: 1030;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(#000, .8);
+    }
+
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    max-width: $screen_1366;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .nav-brand {
+        min-width: 180px;
+        font-size: 14px;
+        font-family: $font_truclenta;
+        color: rgba(#fff, .4);
+        letter-spacing: 2px;
+        line-height: 1.15;
+
+
+        .brand {
+            font-size: 50px;
+            font-weight: 700;
+            color: #fff;
+            display: block;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            .brand {
+                color: deeppink;
+            }
+        }
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+
+        .nav-menu__item {
+
+            letter-spacing: 1px;
+            display: block;
+            position: relative;
+            @extend %common_text;
+            // color: #fff;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -0px;
+                background-color: $color_main;
+                // transform-origin: top left;
+                transform: scale(0, 1);
+                transition: all .3s ease;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scale(1, 1);
+                }
+            }
+        }
+    }
+
+    .user-area {
+        margin-left: auto;
+    }
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+
+    .login,
+    .register {
+        display: block;
+        @extend %common_text;
+    }
+}
