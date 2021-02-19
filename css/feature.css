@@ -1,7 +1,5 @@
 .feature-area {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   margin-top: 20px;
   padding-bottom: 40px;
 }
@@ -16,6 +14,14 @@
 }
 .feature-area .feature__content.reverse {
   flex-direction: row-reverse;
+}
+.feature-area .feature__heading {
+  color: #fff;
+  font-size: 30px;
+}
+.feature-area .feature__text {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=feature.css.map */

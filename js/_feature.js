@@ -55,7 +55,7 @@ $.each(_features, function (a, b) {
 
 function feature_box(a, b, c, d) {
     let html = '';
-    html += '<div class="left-block"><h4 class="news__heading">';
+    html += '<div class="feature__content"><div class="left-block"><h4 class="feature__heading">';
     html += a;
     html += '</h4>';
     html += '<p class="feature__text">';
@@ -65,6 +65,6 @@ function feature_box(a, b, c, d) {
     html += c;
     html += '" alt="" class=""><figcaption>';
     html += d;
-    html += '</figcaption></figure></div>';
+    html += '</figcaption></figure></div></div>';
     return html;
 }

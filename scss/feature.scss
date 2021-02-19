@@ -4,8 +4,6 @@
 
 .feature-area {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     margin-top: 20px;
     padding-bottom: 40px;
 
@@ -26,7 +24,16 @@
         &.reverse {
             flex-direction: row-reverse;
         }
+    }
 
+    .feature__heading {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .feature__text {
+        color: rgba(#fff, .7);
+        margin-top: 20px;
     }
 
 }

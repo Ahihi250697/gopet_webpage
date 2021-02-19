@@ -4,20 +4,20 @@
 
         <div class="feature__content">
 
-            <div class="left-block">
-                <h4 class="news__heading">Gặp gỡ bạn bè</h4>
+            <!-- <div class="left-block">
+                <h4 class="feature__heading">Gặp gỡ bạn bè</h4>
                 <p class="feature__text">
                     asdasd
                 </p>
-            </div>
+            </div> -->
             <!-- end: left block -->
 
-            <div class="right-block">
+            <!-- <div class="right-block">
                 <figure class="">
                     <img src="" alt="" class="">
                     <figcaption>asd</figcaption>
                 </figure>
-            </div>
+            </div> -->
             <!-- end: right block -->
         </div>
         <!-- end: feature content -->
